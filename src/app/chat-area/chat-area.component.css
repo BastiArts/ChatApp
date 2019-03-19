@@ -1,0 +1,23 @@
+.full{
+    width: 100%;
+}
+.fullSend{
+    width:80%;
+
+}
+.fullSend.send{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 5px;
+
+}
+.fullSend.send input{
+    width: 97%;
+}
+.mat-form-field-appearance-legacy,.mat-form-field-underline{
+    background: none!important;
+    border:none;
+}
+

@@ -1,0 +1,15 @@
+<mat-form-field class="full">
+    <textarea matInput [(ngModel)]="receivedMsg" rows="29" id = "history" disabled></textarea>
+</mat-form-field><button mat-button (click)="login()">Login</button>
+<mat-form-field class="fullSend send" *ngIf="this.dataService.activeGroup !== null">
+    <input matInput #message [(ngModel)]="sendText" maxlength="256">
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    <mat-icon (click)="sendMessage()" style = "cursor:pointer;">send</mat-icon>
+</mat-form-field>
+
+<!--
+<input type = "text" [(ngModel)]="username" placeholder="Username">
+<input type = "text" [(ngModel)]="register" placeholder="Registrant"><button mat-button (click)="registerUser()">Register</button><br>
+<input type = "text" [(ngModel)]="unregister" placeholder="Unregister"><button mat-button (click)="unregisterUser()">Unregister</button><br>
+<input type = "text"  placeholder="Message">-->
+<!--<button mat-button (click)="sendMessage()">Send</button> -->
